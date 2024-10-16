@@ -39,3 +39,25 @@ function loginUserMessage(username = "sam") {
 
 console.log(loginUserMessage("nandini"))
 console.log(loginUserMessage())
+
+//... is rest operator here not spread
+function calculateCartPrice(...num1) {
+    return num1
+}
+console.log(calculateCartPrice(200, 400, 600))
+
+const user = {
+    username: "nandini",
+    price: 199
+}
+
+function handleObject(anyObject) {
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`)
+}
+
+handleObject(user)
+
+handleObject({
+    username: "sam",
+    price: 399
+})
