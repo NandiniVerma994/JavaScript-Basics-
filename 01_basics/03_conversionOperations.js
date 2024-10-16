@@ -9,21 +9,21 @@ console.log(valueInNumber)
 
 let score2 = null
 
-console.log(typeof score2)
+console.log(typeof score2)//object
 console.log(typeof(score2))
 
 let valueInNumber2 = Number(score2)
-console.log(typeof valueInNumber2)
-console.log(valueInNumber2)
+console.log(typeof valueInNumber2)//number
+console.log(valueInNumber2)//0
 
 let score3= undefined
 
-console.log(typeof score3)
+console.log(typeof score3)//undefined
 console.log(typeof(score3))
 
 let valueInNumber3 = Number(score3)
 console.log(typeof valueInNumber3)
-console.log(valueInNumber3)
+console.log(valueInNumber3)//NaN
 
 let score4 = true
 

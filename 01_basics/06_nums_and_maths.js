@@ -25,7 +25,8 @@ console.log(Math.ceil(4.2))
 console.log(Math.floor(4.9))
 //returns value between 0 to 1
 console.log(Math.random())
-console.log((Math.random()*10) + 1)//+1 to avoid cases like 0.011324  bexause hme values chahiye jo 1 se upr ho
+console.log((Math.random()*10) + 1)//+1 to avoid cases like 0.011324  bexause hme values chahiye 
+//jo 1 se upr ho
 
 const min = 10;
 const max = 20
@@ -40,7 +41,8 @@ max - min + 1 = 20 - 10 + 1 = 11.
 This means the range of possible values is 11 (i.e., from 10 to 20).
 Math.random() * (max - min + 1):
 
-This multiplies the random number (between 0 and 1) by the range (11), giving a random number between 0 and 11 (exclusive).
+This multiplies the random number (between 0 and 1) by the range (11), giving a random number
+ between 0 and 11 (exclusive).
 Adding min (+ min):
 
 Adding min (10) shifts the random number up, ensuring that it falls between 10 and 21 (exclusive). But because Math.random() can never be 1, it ensures the result is between 10 and 20 (inclusive).

@@ -12,7 +12,7 @@
 
 const id = Symbol('123')
 const anotherId = Symbol('123')
-
+//datatype different
 console.log(id == anotherId)
 
 

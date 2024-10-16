@@ -27,6 +27,8 @@ const JsUser = {
 
 JsUser.greeting = function() {
     console.log("Hello JS User")
+    //function returns no value so after printing this the console log in the function call will
+    //print undefined as this function as returned no value
 }
 
 JsUser.greetingtwo = function() {

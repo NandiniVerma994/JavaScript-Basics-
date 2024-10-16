@@ -1,10 +1,11 @@
 const coding = ["js", "ruby", "java", "python", "cpp"]
-//call back h so iska naam nhi hota, array ke andr chl rha so wo khud parameter me array ki value lekr aayega
+//call back h so iska naam nhi hota, array ke andr chl rha so wo khud parameter me array ki value
+//lekr aayega
 //here val is a type of iterator
 coding.forEach(function (val) {
     console.log(val)
 })
-
+//herre item is iterator (using arrow)
 coding.forEach( (item) => {
     console.log(item)
 })

@@ -5,9 +5,9 @@ const myObject = {
     swift: "swift by apple"
 }
 //only key is accessible(using in)
-// for (const key in myObject) {
-//     console.log(key)
-// }
+for (const key in myObject) {
+    console.log(key)
+}
 
 
 for (const key in myObject) {

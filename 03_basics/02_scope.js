@@ -1,6 +1,7 @@
 
 let a = 300
-//{curly braces when used with object its called object declaration but when used with if else or function its called scope}
+//{curly braces when used with object its called object declaration but when used with if
+// else or function its called scope}
 if(true) {
     let a = 10
     const b = 20
@@ -32,9 +33,12 @@ one()
 const addTwo = function(num) {
     return num + 2
 }
-
+//In the case of function expressions (like const addTwo = function() {...}), only the
+// variable name (addTwo) is hoisted to the top, but it is initialized to undefined until the assignment occurs. The function itself is not hoisted.
 addTwo(5)//but if this is given before the declaration it will give error
 
+//Function declarations are fully hoisted. This means that the entire function is available
+// throughout the scope, regardless of where it is defined.
 console.log(addone(5))
 
 function addone(num) {

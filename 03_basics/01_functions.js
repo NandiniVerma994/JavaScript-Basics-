@@ -40,7 +40,7 @@ function loginUserMessage(username = "sam") {
 console.log(loginUserMessage("nandini"))
 console.log(loginUserMessage())
 
-//... is rest operator here not spread
+//... is rest parameter here not spread   collects all the arguments into a single array
 function calculateCartPrice(...num1) {
     return num1
 }
@@ -56,7 +56,7 @@ function handleObject(anyObject) {
 }
 
 handleObject(user)
-
+//another way of calling
 handleObject({
     username: "sam",
     price: 399
