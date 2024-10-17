@@ -46,6 +46,12 @@ form.addEventListener('submit', function(e) {
     //show the result
     results.innerHTML = `<span>${bmi}</span>`
   }
-  
-
 })
+
+Project3
+document.getElementById('clock')
+//setInterval in javascript allows to run a block of code over and over again
+setInterval(function () {
+  let date = new Date()
+  clock.innerHTML = date.toLocaleTimeString()
+},1000)
