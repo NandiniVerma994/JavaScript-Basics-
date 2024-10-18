@@ -22,6 +22,7 @@ In synchronous programming, operations are performed one after the other, in seq
     const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
     const xhr = new XMLHttpRequest();
     xhr.open('GET', requestUrl)
+    //When you assign a function to xhr.onreadystatechange, you are telling the browser: 
     //Whenever the readyState of this XMLHttpRequest changes, run this function
     xhr.onreadystatechange = function(){
         console.log(xhr.readyState);
