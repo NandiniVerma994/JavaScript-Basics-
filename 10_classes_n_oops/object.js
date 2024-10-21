@@ -2,9 +2,11 @@ function multipleBy5(num) {
     return num*5
 }
 
-// In JavaScript, functions are "first-class citizens," meaning they are treated like objects. This allows you to assign properties
+// In JavaScript, functions are "first-class citizens," meaning they are treated like objects. This allows you to 
+// assign properties
 //  directly to functions, just like you would with objects.
-// You are adding a custom property power to the multipleBy5 function and assigning it the value 2. Now, multipleBy5 is a function that
+// You are adding a custom property power to the multipleBy5 function and assigning it the value 2. Now, 
+//multipleBy5 is a function that
 //  also has an additional property power.
 multipleBy5.power = 2
 
