@@ -1,15 +1,15 @@
-const score = 400
-console.log(score)
-//defining object Number
-const balance = new Number(100)
-console.log(balance)
-console.log(balance.toString().length)
-//after decimal
-console.log(balance.toFixed(2))
+// const score = 400
+// console.log(score)
+// //defining object Number
+// const balance = new Number(100)
+// console.log(balance)
+// console.log(balance.toString().length)
+// //after decimal
+// console.log(balance.toFixed(2))
 
-const otherNumber = 23.8966
-//number of figures given (returns string)
-console.log(otherNumber.toPrecision(3))
+// const otherNumber = 23.8966
+// //number of figures given (returns string)
+// console.log(otherNumber.toPrecision(3))
 
 const hundreds = 1000000
 console.log(hundreds.toLocaleString())
@@ -45,7 +45,8 @@ This multiplies the random number (between 0 and 1) by the range (11), giving a 
  between 0 and 11 (exclusive).
 Adding min (+ min):
 
-Adding min (10) shifts the random number up, ensuring that it falls between 10 and 21 (exclusive). But because Math.random() can never be 1, it ensures the result is between 10 and 20 (inclusive).
+Adding min (10) shifts the random number up, ensuring that it falls between 10 and 21 (exclusive). But because Math.random() can 
+never be 1, it ensures the result is between 10 and 20 (inclusive).
 Math.floor():
 
 This function rounds the number down to the nearest whole integer. So the final result will be an integer between 10 and 20 (inclusive).

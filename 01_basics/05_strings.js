@@ -54,7 +54,7 @@ In JavaScript, objects are linked together through a prototype chain.
 If you try to access a property or method on an object and it doesn't exist on that object, 
 JavaScript will look for it in the object's prototype. If it's not there, it will check the 
 prototype's prototype, and so on, all the way up the chain until it reaches Object.prototype
- (the base prototype for all objects).
+(the base prototype for all objects).
 If the property or method isn't found anywhere in the chain, JavaScript returns undefined.
 function Person(name) {
   this.name = name;
