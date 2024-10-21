@@ -9,7 +9,8 @@
 
 // const myNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 // //filter return krta h value ko 
-// //filter ke andr ek call back function milega jiske andr hrr ek value ko access kiya jayega, uske baad ek condition dena pdega
+// //filter ke andr ek call back function milega jiske andr hrr ek value ko access kiya jayega, uske baad ek
+// condition dena pdega
 // const newNums = myNum.filter( (num) => num > 4)
 // console.log(newNums)
 

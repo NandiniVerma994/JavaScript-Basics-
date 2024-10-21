@@ -1,4 +1,5 @@
 const myNums = [1, 2, 3]
+//acc means accumulator
 // const myTotal = myNums.reduce(function (acc, currval) {
 //     console.log(`acc: ${acc} and currval: ${currval}`)
 //     return acc + currval
