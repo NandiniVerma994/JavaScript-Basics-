@@ -64,7 +64,7 @@ const course = {
     price: "999",
     courseInstructor: "Hitesh"
 }
-//course.courseInstructor
+//course.courseInstructor is long to access so we can do it using 
 
 const {courseInstructor} = course
 console.log(courseInstructor)

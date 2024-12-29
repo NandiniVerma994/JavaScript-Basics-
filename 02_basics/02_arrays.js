@@ -1,14 +1,14 @@
 const marvel_heroes = ["thor", "Ironman", "Spiderman"]
 const dc_heroes = ["superman", "flash", "batman"]
 //arrays ke andr arrays de rha dc_heroes ko ek single entity ke jaisa treat kr rha
-marvel_heroes.push(dc_heroes)
+// marvel_heroes.push(dc_heroes)
 
-console.log(marvel_heroes)
-console.log(marvel_heroes[3][1])
+// console.log(marvel_heroes)
+// console.log(marvel_heroes[3][1])
 
 //concat pure array ko ek entity treat nhi krta
-// const all_heroes = marvel_heroes.concat(dc_heroes)
-// console.log(all_heroes)
+const all_heroes = marvel_heroes.concat(dc_heroes)
+console.log(all_heroes)
 
 //spread kr dega saari values ko
 const all_new_heroes = [...marvel_heroes, ...dc_heroes]
