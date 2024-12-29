@@ -1,5 +1,5 @@
 //Nullish Coalescing Operator (??) : null , undefined
-
+//assigns a non-null value and if its null then checks and assigns accordingly (last case)
 let val1
 //val1 = 5 ?? 10
 //val1 = null ?? 10
