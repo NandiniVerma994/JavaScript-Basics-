@@ -1,15 +1,15 @@
-// const score = 400
-// console.log(score)
-// //defining object Number
-// const balance = new Number(100)
-// console.log(balance)
-// console.log(balance.toString().length)
-// //after decimal
-// console.log(balance.toFixed(2))
+const score = 400
+console.log(score)
+//defining object Number
+const balance = new Number(100)
+console.log(balance)
+console.log(balance.toString().length)
+//after decimal
+console.log(balance.toFixed(2))
 
-// const otherNumber = 23.8966
-// //number of figures given (returns string)
-// console.log(otherNumber.toPrecision(3))
+const otherNumber = 23.8966
+//number of figures given (returns string)
+console.log(otherNumber.toPrecision(3))
 
 const hundreds = 1000000
 console.log(hundreds.toLocaleString())

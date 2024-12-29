@@ -1,7 +1,7 @@
 let myDate = new Date()
 console.log(myDate.toString())
 console.log(myDate.toLocaleString())
-
+//month indexing starts from 0
 let myCreatedDate = new Date(2024, 4, 9)
 console.log(myCreatedDate.toDateString())
 
@@ -10,6 +10,7 @@ console.log(myCreatedDate2.toString())
 
 let myTimeStamp = Date.now()
 console.log(myTimeStamp)
+//gives time in milliseconds
 console.log(myCreatedDate.getTime())
 console.log(Math.floor(Date.now()/1000))
 

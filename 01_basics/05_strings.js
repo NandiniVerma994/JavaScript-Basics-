@@ -17,11 +17,11 @@ console.log(gameName.__proto__)
 // console.log(gameName.indexOf('v'));
 
 // //startIndex and endIndex (excluding the last one)
-// const newString = gameName.substring(0, 4)
-// console.log(newString)
+const newString = gameName.substring(0, 4)
+console.log(newString)
 
-// const anotherString = gameName.slice(-8,4)
-// console.log(anotherString)
+const anotherString = gameName.slice(-8,4)
+console.log(anotherString)
 
 // const newStringOne = "    hitesh   "
 // console.log(newStringOne)
