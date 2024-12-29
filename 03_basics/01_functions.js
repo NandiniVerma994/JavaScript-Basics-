@@ -16,7 +16,8 @@
 
 // const result = addTwoNumbers(3, 5)
 
-// console.log("Result:", result)//this will give undefined
+// console.log("Result:", result)//this will give undefined because the function in itself is not 
+//returning any values
 
 
 // function addTwoNumbers(number1, number2) {
@@ -29,16 +30,16 @@
 // console.log("Result:", result2)
 
 
-// function loginUserMessage(username = "sam") {
-//     if(username === undefined) {
-//         console.log("Please enter a username")
-//         return
-//     }
-//     return `${username} just logged in`
-// }
+function loginUserMessage(username = "sam") {
+    if(username === undefined) {
+        console.log("Please enter a username")
+        return
+    }
+    return `${username} just logged in`
+}
 
-// console.log(loginUserMessage("nandini"))
-// console.log(loginUserMessage())
+console.log(loginUserMessage("nandini"))
+console.log(loginUserMessage())
 
 //... is rest parameter here not spread   collects all the arguments into a single array
 function calculateCartPrice(...num1) {

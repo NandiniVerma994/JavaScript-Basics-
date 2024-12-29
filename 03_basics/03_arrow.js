@@ -21,6 +21,13 @@ function chai() {
 
 chai()
 
+const chai2 = function() {
+    let username = "nandini"
+    console.log(username)
+}
+
+chai2()
+
 //+++++++++++++++++Arrow+++++++++++++
 //with curly braces use return
 // const addTwo = (num1, num2) => {
