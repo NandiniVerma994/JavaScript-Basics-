@@ -47,3 +47,7 @@ while creating a textarea in js innertext overwrites the value so we prefer crea
 
 Eventlistener  me jo v function rhega wo by default event ka hi hota( e is the event like mouse click and e.target is the 
 target from where that event happens)
+
+settimeout-> x seconds ke baad wo ek baar uss function ko execute krega
+settimeinterval -> x time interval me wo hrr baar same function execute hote rhega
+cleartimeout -> isme settimeout ka handler pass kro so that wo usko clear kr dega jb eventlistener click hoga
