@@ -14,7 +14,8 @@
 // .catch() is called when the promise is rejected.
 
 // Async/Await
-// async/await is syntactic sugar built on top of Promises. It allows you to write asynchronous code that looks synchronous, making it easier to read and maintain.
+// async/await is syntactic sugar built on top of Promises. It allows you to write asynchronous 
+// code that looks synchronous, making it easier to read and maintain.
 
 // async: Declares a function as asynchronous. The function returns a Promise implicitly.
 // await: Pauses the execution of the function until the Promise is resolved or rejected.
@@ -123,4 +124,39 @@ getAllUsers()
 
 //read promise.all
 
+
+// Synchronous = one task at a time, waits for each to finish.
+
+// Asynchronous = moves to next task, handles results later.
+// console.log("Start");
+// setTimeout(() => {
+//   console.log("Async task done");
+// }, 2000);  // runs after 2 seconds
+// console.log("End");
+
+// Output
+// Start
+// End
+// Async task done
+
+new Promise(function(resolve, reject) {
+  let errorOccurred = true;
+
+  if (errorOccurred) {
+    reject("Something went wrong");
+  } else {
+    resolve("Everything is fine");
+  }
+})
+.then(function(result) {//takes something went wrong as parameter
+  console.log("Success:", result);
+})
+.catch(function(error) {
+  console.log("Error:", error);
+});
+
+// // | Called      | Result          |
+// | ----------- | --------------- |
+// | `resolve()` | `.then()` runs  |
+// | `reject()`  | `.catch()` runs |
 

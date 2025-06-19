@@ -35,3 +35,37 @@ In synchronous programming, operations are performed one after the other, in seq
     xhr.send();
 </script>
 </html>
+
+<!-- In technical terms:
+0 (Unsent): You created the request but didn’t call open() yet.
+
+1 (Opened): You called open(), but haven’t sent it yet.
+
+2 (Headers received): Server responded with status (like 200 OK), but not the body.
+
+3 (Loading): Receiving data from the server bit by bit.
+
+4 (Done): Response is completely received and ready to use. -->
+
+<!-- let xhr = new XMLHttpRequest();----0
+
+xhr.onreadystatechange = function () {
+  console.log("Ready state:", xhr.readyState);
+  if (xhr.readyState === 4 && xhr.status === 200) {
+    console.log("Response received:", xhr.responseText);
+  }
+};
+//ready to get the request
+xhr.open("GET", "data.json");  // readyState becomes 1------1
+xhr.send();                    // begins the request -----2
+
+
+Create the request → new XMLHttpRequest() → readyState = 0
+
+Open the request (set method and URL) → .open() → readyState = 1
+
+Send the request → .send() → readyState = 2 (headers received)
+
+Receiving the data → readyState = 3
+
+All data received → readyState = 4-->

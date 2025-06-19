@@ -1,4 +1,5 @@
 const coding = ["js", "ruby", "java", "python", "cpp"]
+// A callback function is a function that is passed as an argument to another function,
 //call back h so iska naam nhi hota, array ke andr chl rha so wo khud parameter me array ki value
 //lekr aayega
 //here val is a type of iterator
