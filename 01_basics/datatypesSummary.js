@@ -10,10 +10,10 @@
 // // const score = "nan"
 // // both are right
 
-// const id = Symbol('123')
-// const anotherId = Symbol('123')
-// //datatype different
-// console.log(id == anotherId)
+const id = Symbol('123')
+const anotherId = Symbol('123')
+//datatype different
+console.log(id == anotherId)
 
 
 // const bigNumber = 3385039450701205n
@@ -44,7 +44,7 @@
 
 //Stack(Primitive), Heap(Non-Primitive)
 
-let myYoutubename = "hiteshChoudhary"
+let myYoutubename = "hiteshChoudhary"//as its a string(primitive type) Value is copied
 
 let anothername = myYoutubename
 anothername = "chaiaurcode"
@@ -57,7 +57,7 @@ let userOne = {
     upi: "user@ybl"
 }
 
-let userTwo = userOne
+let userTwo = userOne //non primitive (Reference is copied) so whatever changes are done is done in the original copy
 
 userTwo.email = "nandini@google.com"
 
