@@ -84,3 +84,53 @@
  a continuous array because it has no missing elements. Continuous arrays are more optimized for performance.
 
 In terms of optimization, continuous arrays are more efficient and optimized for various operations compared to holey arrays.-->
+
+this refers to the object that is calling the function. But sometimes, you want to control what 
+this should be — that's where call, apply, and bind help.
+Call->calls a function immediately
+
+function greet(age) {
+  console.log("Hello " + this.name + ", age " + age);
+}
+
+let person = { name: "Nandini" };
+//here first paramter will always be a reference to the this variable(this function will be called
+with refrence to the person object) and second one could be 
+//arguments to the function
+greet.call(person, 20);  // this → person
+
+apply->Just like call(), but passes arguments to the function as an array
+
+greet.apply(person, [20]);  // same result, but with array
+
+Bind->
+Does NOT call the function immediately
+
+Returns a new function with this set, which you can call later
+let greetNandini = greet.bind(person);
+greetNandini(20);  // calls it later
+ Output: Hello Nandini, age 20
+
+ A closure is a function that remembers the variables around it, even after the outer function is finished.
+
+function outer() {
+  let name = "Nandini";
+
+  function inner() {
+    console.log("Hello, " + name);
+  }
+
+  return inner;
+}
+
+let greet = outer();  // outer runs and returns inner
+greet();  // Hello, Nandini
+What's happening:
+outer() creates a variable name
+
+inner() uses that variable
+
+Even after outer() finishes, inner() remembers name
+
+That memory is a closure
+
