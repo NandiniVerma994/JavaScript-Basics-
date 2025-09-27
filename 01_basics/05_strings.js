@@ -4,12 +4,12 @@ const repoCount = 10
 //console.log(name + repoCount + " Value")
 
 //String Interpolation
-console.log(`Hello my name is ${name} and  my repo count is ${repoCount}`)
+// console.log(`Hello my name is ${name} and  my repo count is ${repoCount}`)
 
 const gameName = new String('hitesh-hc')
 //Strings are key value pairs
-console.log(gameName[0])
-console.log(gameName.__proto__)
+// console.log(gameName[0])
+// console.log(gameName.__proto__)
 // console.log(gameName.length)
 // console.log(gameName.toUpperCase())
 // //to know  characters at a given position
@@ -17,8 +17,12 @@ console.log(gameName.__proto__)
 // console.log(gameName.indexOf('v'));
 
 // //startIndex and endIndex (excluding the last one)
-const newString = gameName.substring(0, 4)
-console.log(newString)
+// const newString = gameName.substring(0, 4)
+// console.log(newString)
+
+
+// start = 9 + (-8) = 1
+// end = 4
 
 const anotherString = gameName.slice(-8,4)
 console.log(anotherString)
