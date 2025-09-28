@@ -3,6 +3,7 @@
 // filter = pick some ✅
 
 // reduce = combine to one 
+// reduce() is a built-in array method that combines (or “reduces”) all elements of an array into a single value.
 
 // for each = does not return anythign
 const myNums = [1, 2, 3]
